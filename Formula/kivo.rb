@@ -5,14 +5,14 @@
 class Kivo < Formula
   desc ""
   homepage "https://github.com/Permify/kivo"
-  version "0.0.6"
+  version "0.0.7"
   license "Apache-2.0"
 
   depends_on "go" => :build
 
   on_macos do
-    url "https://github.com/Permify/kivo/releases/download/v0.0.6/kivo_0.0.6_darwin_all.tar.gz", using: CurlDownloadStrategy
-    sha256 "c8e6628f78180912f3a844f5d3c8ce95732551bd52856a8e30074314f0ccc659"
+    url "https://github.com/Permify/kivo/releases/download/v0.0.7/kivo_0.0.7_darwin_all.tar.gz", using: CurlDownloadStrategy
+    sha256 "cd7143d19efe6e88dd72dd0878b830db79620f779538f778e14ac69b8e7067a7"
 
     def install
       bin.install "kivo"
@@ -22,8 +22,8 @@ class Kivo < Formula
   on_linux do
     if Hardware::CPU.intel?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/Permify/kivo/releases/download/v0.0.6/kivo_0.0.6_linux_amd64.tar.gz", using: CurlDownloadStrategy
-        sha256 "bfcc53f4489b4aa9fffd8c683f74bbe8b42af2bd16459b2edb34eeb7ad03f3c9"
+        url "https://github.com/Permify/kivo/releases/download/v0.0.7/kivo_0.0.7_linux_amd64.tar.gz", using: CurlDownloadStrategy
+        sha256 "55330bc8204e8764f80789407965b34c365d0b5de32551b7cf8b5629e89ca21a"
 
         def install
           bin.install "kivo"
@@ -32,8 +32,8 @@ class Kivo < Formula
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/Permify/kivo/releases/download/v0.0.6/kivo_0.0.6_linux_arm64.tar.gz", using: CurlDownloadStrategy
-        sha256 "a4d6cc8a9fa320bbaf4274e3f64d97100f909aedf0a42a28b0a5002713b8f458"
+        url "https://github.com/Permify/kivo/releases/download/v0.0.7/kivo_0.0.7_linux_arm64.tar.gz", using: CurlDownloadStrategy
+        sha256 "0b7f3f9411ec3cb50b3bf8e16b801a7c5c1c5ad4b0075d65634fe8049670aefb"
 
         def install
           bin.install "kivo"
